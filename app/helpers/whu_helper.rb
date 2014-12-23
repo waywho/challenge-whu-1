@@ -1,0 +1,2 @@
+module WhuHelper
+end
