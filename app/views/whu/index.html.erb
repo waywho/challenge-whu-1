@@ -1,6 +1,8 @@
+<div class = "col-xs-12 col-md-8">
 <div class="box1">
 <h1>Twas the Night Before Christmas</h1>
 </div>
+
 
 <div class="box2">
 	<div id="tree-star">
@@ -99,5 +101,13 @@
 			"Happy Christmas to all, </p><p><span>and to all a good-night!"</span></p>
 		</div>
 </div>
+</div>
+<div class = "col-xs-6 col-md-4">
+	<h1>My Christmas Gift Wish</h1>
+<% @gifts.each do |gift| %>
+	<p><%= link_to gift.name, gift.url %></p>
+<% end %>
+<%= link_to 'Add My Christmas Gift Wish', new_gift_path, :class => 'btn btn-success' %>
+</div>
 
-		<span class="sig">design by WeiHsi Hu, 24, December, 2014</span>
+

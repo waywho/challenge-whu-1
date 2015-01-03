@@ -1,0 +1,11 @@
+
+<div class="col-xs-10 col-xs-offset-1">
+<h1>Your Christmas Gift Wish to Santa</h1>
+
+<%= simple_form_for @gift do |f| %>
+<%= f.input :name %>
+<%= f.input :url %>
+<br />
+<%= f.submit 'Send Your Wish', :class => 'btn btn-success' %>
+<% end %>
+</div>
