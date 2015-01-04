@@ -103,11 +103,37 @@
 </div>
 </div>
 <div class = "col-xs-6 col-md-4">
-	<h1>My Christmas Gift Wish</h1>
+	<h1>My Christmas Wish List</h1>
 <% @gifts.each do |gift| %>
 	<p><%= link_to gift.name, gift.url %></p>
 <% end %>
 <%= link_to 'Add My Christmas Gift Wish', new_gift_path, :class => 'btn btn-success' %>
+</div>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#myModal">
+  Add My Christmas Wish List
+</button>
+
+<br />
+<br />
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Add to My Christmas Wish List</h4>
+      </div>
+      <div class="modal-body">
+       ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
 </div>
 
 
